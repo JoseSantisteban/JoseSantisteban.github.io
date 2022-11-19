@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pruebas.css">
+    <title>Análisis de Pruebas</title>
+
+</head>
+<body>
+    <nav>
+        <a href="/app.html">Home</a>
+        <a href="/form.html">Formulario</a>
+        <a href="/pruebas.html">Puebas</a>
+        <a href="/contacto.html">Contacto</a>
+        <div class="animation"></div>
+    </nav>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Evaluación del nivel de severidad de TDAH
+            </h1>
+            <p id="description">
+                Conteste las preguntas sólo si tiene indicios confirmados de padecer TDAH, ha realizado algún tipo de evaluación o está a la espera de sus resultado de diagnóstico.
+            </p>
+        </header>
+        <form action="" id="survey-form">
+            <!--Text section-->
+            <div id="form-group">
+                <label for="name">Nombre Completo: </label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad: </label>
+                <input type="text" name="edad" id="edad" class="formControl" placeholder="Ingresa tu edad" required>
+            </div>
+            <!--End of text section-->
+
+            <!--Select Number of symptoms-->
+            <div id="form-group">
+                <p1 id="quest"> ¿Recuerda qué tipo de evaluaciones ha realizado hasta el momento?
+                </p1>
+                <textarea name="evaluaciones" id="evaluaciones" cols="30" rows="5" class="textarea" placeholder="Escriba su respuesta">
+                </textarea>
+            </div>
+            <!--End of Number of symptoms-->
+            <div id="form-group">
+                <p1 id="quest"> ¿Cuántas evaluaciones ha realizado hasta el momento?
+                </p1>
+                <select name="num-sintomasA2" id="dropdown-sintomas2" class="formControl" required>
+                    <option value="" disabled selected>Número de pruebas realizadas</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+            </div>
+            <!--Radio button section-->
+            <div class="form-group">
+                <p1 id="quest">¿Qué tanta dificultad experimentó al momento de realizar las pruebas?</p1>
+                <label for="B">
+                    <input type="radio" name="source"
+                    value="Si"
+                    class="inputRadio" 
+                    checked> Poca
+                </label>
+                <label for="B">
+                    <input type="radio" name="source"
+                    value="No"
+                    class="inputRadio" 
+                    checked> Moderada
+                </label>
+                <label for="B">
+                    <input type="radio" name="source"
+                    value="No"
+                    class="inputRadio" 
+                    checked> Demasiada
+                </label>
+            </div>
+            <div class="form-group">
+                <p1 id="quest">¿Qué tanta dificultad tuvo en los ejercicios de memoria y asociación?</p1>
+                <label for="B">
+                    <input type="radio" name="source2"
+                    value="Si"
+                    class="inputRadio" 
+                    checked> Poca
+                </label>
+                <label for="B">
+                    <input type="radio" name="source2"
+                    value="No"
+                    class="inputRadio" 
+                    checked> Moderada
+                </label>
+                <label for="B">
+                    <input type="radio" name="source2"
+                    value="No"
+                    class="inputRadio" 
+                    checked> Demasiada
+                </label>
+            </div>
+            <div class="form-group">
+                <p1 id="quest">¿Qué tanta dificulta tuvo para mantener la concentración durante las pruebas?</p1>
+                <label for="B">
+                    <input type="radio" name="source1"
+                    value="Si"
+                    class="inputRadio" 
+                    checked> Poca
+                </label>
+                <label for="B">
+                    <input type="radio" name="source1"
+                    value="No"
+                    class="inputRadio" 
+                    checked> Moderada
+                </label>
+                <label for="B">
+                    <input type="radio" name="source1"
+                    value="No"
+                    class="inputRadio" 
+                    checked> Demasiada
+                </label>
+            </div>
+            <div class="form-group">
+                <p1 id="quest">¿Se le ha recomendado tomar medicación o toma medicación para mejorar la concentración?</p1>
+                <label for="E">
+                    <input type="radio" name="source4"
+                    value="Si"
+                    class="inputRadio" 
+                    checked> Si
+                </label>
+                <label for="E">
+                    <input type="radio" name="source4"
+                    value="No"
+                    class="inputRadio" 
+                    checked> No
+                </label>
+            </div>
+            <!--End of Radio button section-->
+
+            <!--Submit--> 
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+    <nav>
+        <a href="/app.html">Home</a>
+        <a href="/form.html">Formulario</a>
+        <a href="/pruebas.html">Puebas</a>
+        <a href="/contacto.html">Contacto</a>
+        <div class="animation"></div>
+    </nav>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Cuestionario Preliminar para el Diagnostico de TDAH
+            </h1>
+            <p id="description">
+                Contestando las preguntas podremos evaluar si es que hay
+                indicios de padecer TDAH
+            </p>
+        </header>
+        <form action="" id="survey-form">
+            <!--Text section-->
+            <div id="form-group">
+                <label for="name">Nombre Completo: </label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad: </label>
+                <input type="text" name="edad" id="edad" class="formControl" placeholder="Ingresa tu edad" required>
+            </div>
+            <!--End of text section-->
+
+            <!--Select Number of symptoms-->
+            <div id="form-group">
+                <p1 id="quest">A.1 Síntomas de Inatención. ¿Con cuántos de los siguientes síntomas según su
+                    propia experiencia
+                    siente que afectan directamente y con frecuencia sus actividades sociales, académicas o laborales?
+                </p1>
+                <ul id="listasintomasA1">
+                    <li>Falla en prestar la debida atención a detalles y se cometen errores en las tareas.</li>
+                    <li>Dificultades para mantener la atención en tares o actividades recreativas.</li>
+                    <li>Parece no escuchar cuando se le habla directamente.</li>
+                    <li>No sigue las instrucciones y no termina los deberes.</li>
+                    <li>Dificultad para organizar las tareas y actividades.</li>
+                    <li>Evita, le disgusta o muestra poco esfuerzo en iniciar tareas que requieren un esfuerzo mental
+                        sostenido.</li>
+                    <li>Pierde cosas necesarias para tareas o actividades.</li>
+                    <li>Se distrae con facilidad por estímulos externos.</li>
+                    <li>Olvida las actividades cotidianas.</li>
+                </ul>
+                <select name="num-sintomasA1" id="dropdown-sintomas" class="formControl" required>
+                    <option value="" disabled selected>Seleccion total de síntomas</option>
+                    <option value="none">0</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                    <option value="seven">7</option>
+                    <option value="eight">8</option>
+                    <option value="nine">9</option>
+                </select>
+            </div>
+            <div id="form-group">
+                <p1 id="quest">A.2 Síntomas de Hiperactividad e Impulsividad. ¿Con cuántos de los siguientes síntomas según su
+                    propia experiencia
+                    siente que afectan directamente y con frecuencia sus actividades sociales, académicas o laborales?
+                </p1>
+                <ul id="listasintomasA2">
+                    <li>Juguetea con o golpea las manos o los pies o se retuerce en el asiento.</li>
+                    <li>Se levanta en situaciones en que se espera que permanezca sentado.                    </li>
+                    <li>Está inquieto en situaciones en las que no resulta apropiado.</li>
+                    <li>Es incapaz de jugar o de ocuparse tranquilamente en actividades recreativas.</li>
+                    <li>Está "ocupado", actuando como si "lo impulsara un motor".</li>
+                    <li>Habla excesivamente.</li>
+                    <li>Responde inesperadamente o antes de que se haya concluido una pregunta.</li>
+                    <li>Le es difícil esperar su turno</li>
+                    <li>Interrumpe o se inmiscuye con otros.</li>
+                </ul>
+                <select name="num-sintomasA2" id="dropdown-sintomas2" class="formControl" required>
+                    <option value="" disabled selected>Seleccion total de síntomas</option>
+                    <option value="none">0</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                    <option value="seven">7</option>
+                    <option value="eight">8</option>
+                    <option value="nine">9</option>
+                </select>
+            </div>
+            <!--End of Number of symptoms-->
+
+            <!--Radio button section-->
+            <div class="form-group">
+                <p1 id="quest">B. ¿Los síntomas que ha marcado han estado presentes en su vida antes de los 12 años?</p1>
+                <label for="B">
+                    <input type="radio" name="source"
+                    value="Si"
+                    class="inputRadio" 
+                    checked> Si
+                </label>
+                <label for="B">
+                    <input type="radio" name="source"
+                    value="No"
+                    class="inputRadio" 
+                    checked> No
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="quest"><div class="form-group">
+                    <p1 id="quest">C. ¿Experimenta los síntomas que marcó en más de dos contextos? (Ej. en casa, en la universidad o trabajo, con amigos o parientes, etc.)</p1>
+                    <label for="C">
+                        <input type="radio" name="source2"
+                        value="Si"
+                        class="inputRadio" 
+                        checked> Si
+                    </label>
+                    <label for="C">
+                        <input type="radio" name="source2"
+                        value="No"
+                        class="inputRadio" 
+                        checked> No
+                    </label>
+                </div></p>
+            </div>
+            <div class="form-group">
+                <p1 id="quest">D. ¿Los síntomas interfieren con tu funcionamiento social, académico o laboral?</p1>
+                <label for="D">
+                    <input type="radio" name="source3"
+                    value="Si"
+                    class="inputRadio" 
+                    checked> Si
+                </label>
+                <label for="D">
+                    <input type="radio" name="source3"
+                    value="No"
+                    class="inputRadio" 
+                    checked> No
+                </label>
+            </div>
+            <div class="form-group">
+                <p1 id="quest">E. ¿Presenta algún diagnóstico que pudieran explicar mejor estos síntomas? (Ej. esquizofrenia u otro trastorno psicótico, ansiedad, trastorno del estado del ánimo, trastorno disociativo, trastorno de la personalidad, consumo de sustancias)</p1>
+                <label for="E">
+                    <input type="radio" name="source4"
+                    value="Si"
+                    class="inputRadio" 
+                    checked> Si
+                </label>
+                <label for="E">
+                    <input type="radio" name="source4"
+                    value="No"
+                    class="inputRadio" 
+                    checked> No
+                </label>
+            </div>
+            <div class="form-group">
+                <p1 id="quest">F. ¿Ha experimentado los síntomas y dificultades anteriormente mencionadas por un periodo mayor a 6 meses al momento de enviar su respuesta?</p1>
+                <label for="F">
+                    <input type="radio" name="source5"
+                    value="Si"
+                    class="inputRadio" 
+                    checked> Si
+                </label>
+                <label for="F">
+                    <input type="radio" name="source5"
+                    value="No"
+                    class="inputRadio" 
+                    checked> No
+                </label>
+            </div>
+            <!--End of Radio button section-->
+
+            <!--Submit--> 
+            <div class="form-group">
+                <button  id="submit" class="btn" onclick="getDX()">Enviar</button>
+            </div>
+            <p1> Resultado: 
+                <span class="output"></span>
+            </p1>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js">
+    </script>
+
+    <script id="text/javascript">
+        var modelo=null;
+
+        //cargar modelo
+        (async()=>{
+            console.log("Cargando modelo...");
+            modelo=await tf.loadLayersModel("/modelo predecir indicios TDAH/model.json");
+            console.log("Modelo cargado...");
+        })();
+
+        function getDX(){
+            sintomasA1 = document.querySelector('#dropdown-sintomas');
+            output = sintomasA1.value;
+            sintomasA2 = document.querySelector('#dropdown-sintomas2');
+            output2 = sintomasA2.value;
+            var eleB = document.getElementsByName('source');
+            for(i = 0; i < eleB.length; i++) {
+                if(eleB[i].checked)
+                if(eleB[i].value=="Si")
+                        var B_ans = 1;
+                    else
+                        var B_ans = 0;
+            }
+            var eleC = document.getElementsByName('source2');
+            for(i = 0; i < eleC.length; i++) {
+                if(eleC[i].checked)
+                if(eleC[i].value=="Si")
+                        var C_ans = 1;
+                    else
+                        var C_ans = 0;
+            }
+            var eleD = document.getElementsByName('source3');
+            for(i = 0; i < eleD.length; i++) {
+                if(eleD[i].checked)
+                    if(eleD[i].value=="Si")
+                        var D_ans = 1;
+                    else
+                        var D_ans = 0;
+            }
+            var eleE = document.getElementsByName('source4');
+            for(i = 0; i < eleE.length; i++) {
+                if(eleE[i].checked)
+                    if(eleE[i].value=="Si")
+                        var E_ans = 1;
+                    else
+                        var E_ans = 0;
+            }
+            var eleF = document.getElementsByName('source5');
+            for(i = 0; i < eleF.length; i++) {
+                if(eleF[i].checked)
+                    if(eleF[i].value=="Si")
+                        var F_ans = 1;
+                    else
+                        var F_ans = 0;
+            }
+
+            if(modelo!=null){
+                var tensor= tf.tensor1d([parseInt(output), parseInt(output2),
+                 parseInt(B_ans), parseInt(C_ans), parseInt(D_ans), parseInt(E_ans),
+                 parseInt(F_ans)]);
+
+                 var prediction = modelo.predict(tensor).dataSync();
+
+                 prediction = Math.round(prediction);
+
+                 document.getElementsById("output").innerHTML = prediction;
+
+            }else{
+
+            }
+        }
+    </script>
+</body>
+
+</html>
